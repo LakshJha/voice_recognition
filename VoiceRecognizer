@@ -1,7 +1,7 @@
 #pip install SpeechRecognition
 import speech_recognition as sr
 
-#To understand the message
+#Variable to use functions of speech recognition module
 listener = sr.Recognizer()
 
 try:

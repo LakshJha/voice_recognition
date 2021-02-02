@@ -1,7 +1,8 @@
 #pip install SpeechRecognition
 import speech_recognition as sr
 
-
+#To understand the message
+listener = sr.Recognizer()
 
 try:
     #Defining the source of our command

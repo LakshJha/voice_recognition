@@ -1,0 +1,23 @@
+#pip install SpeechRecognition
+import speech_recognition as sr
+
+
+
+try:
+    #Defining the source of our command
+
+    #using microphone as our source
+    with sr.Microphone() as mic:
+
+        #For user to know when to speak
+        print("Hi, I am April, talk to me using my name...")
+
+        #To store our message
+        voice = listener.listen(mic)
+
+        command = listener.recognize_google(voice)
+        command = command.lower()
+        if 'april' in command:
+            print(command)
+except:
+    pass
